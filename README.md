@@ -1,4 +1,4 @@
-## docker-git-bash
+## git-bash
 
 A docker image with bash and git installed.
 
