@@ -2,6 +2,8 @@
 
 A docker image with bash and git installed.
 
+[![DockerHub Badge](http://dockeri.co/image/beckermarc/git-bash)](https://hub.docker.com/r/beckermarc/git-bash)
+
 #### Usage
 ```
 docker run -v /your/git/repo:/git -v /your/git-init.sh:/git-init.sh -it beckermarc/git-bash:latest
