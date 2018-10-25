@@ -6,7 +6,7 @@ RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 
 # install git
 RUN echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
-RUN apk add git@edge=2.19.1-r0
+RUN apk add man man-pages mdocml-apropos bash-completion git-doc@edge=2.19.1-r0 git@edge=2.19.1-r0
 
 # install less and vim
 RUN apk add --no-cache less vim
