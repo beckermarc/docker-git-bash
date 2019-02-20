@@ -19,8 +19,7 @@ RUN apk add --no-cache  less \
     echo "autocmd FileType yml,yaml set tabstop=2" >> ~/.vimrc
 
 # install git
-RUN echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
-    apk add --no-cache git-doc@edge=2.19.1-r0 git@edge=2.19.1-r0 && \
+RUN apk add --no-cache git-doc git && \
     git --version
 
 # create git dir and set ~/.profile configuration
